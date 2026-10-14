@@ -1,0 +1,54 @@
+name: 脚本质量反馈
+description: 反馈一次短视频脚本生成结果
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: textarea
+    id: input
+    attributes:
+      label: 原始输入
+      description: 你输入的主题、文章或摘要是什么？
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 使用分类
+      options:
+        - technical
+        - general_knowledge
+        - product_marketing
+        - career_experience
+        - paper_to_video
+        - 不确定
+    validations:
+      required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: 生成结果
+      description: 粘贴生成的标题、钩子、脚本或分镜
+    validations:
+      required: true
+
+  - type: dropdown
+    id: usable
+    attributes:
+      label: 这个脚本能不能直接用？
+      options:
+        - 能直接拍
+        - 需要小改
+        - 需要大改
+        - 完全不能用
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 最大问题是什么？
+      description: 比如太书面、技术不准、钩子不吸引、分镜没用等
+    validations:
+      required: true

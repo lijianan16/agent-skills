@@ -7,6 +7,8 @@
 | 技能 | 用途 | 入口 |
 | --- | --- | --- |
 | hot-monitor | 聚合公开热点，发现 AI 应用方向的新仓库和近期热门仓库 | [SKILL.md](skills/hot-monitor/SKILL.md) |
+| short-video-script-skill | 把文章或主题整理成短视频口播稿和镜头安排 | [SKILL.md](skills/short-video-script-skill/SKILL.md) |
+| jianying-editor | 把素材导入剪映，拼接画面并加入配音、字幕和背景音乐 | [SKILL.md](skills/jianying-editor/SKILL.md) |
 
 ## 仓库结构
 
@@ -16,6 +18,14 @@ skills/
     SKILL.md
     scripts/
     references/
+  short-video-script-skill/
+    SKILL.md
+    prompts/
+    examples/
+  jianying-editor/
+    SKILL.md
+    scripts/
+    rules/
 ```
 
 每个技能使用独立目录，技能说明、脚本和参考资料放在一起。
